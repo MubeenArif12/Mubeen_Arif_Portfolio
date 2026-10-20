@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mubeen Arif | Portfolio</title>
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;scroll-behavior:smooth}
+body{font-family:Arial,sans-serif;background:#f5f9fc;color:#263648;line-height:1.7}
+nav{background:#071a2f;color:white;padding:18px 6%;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;z-index:10}
+.logo{font-size:22px;font-weight:bold;color:white;text-decoration:none}
+.logo span{color:#38bdf8}
+nav ul{display:flex;gap:15px;list-style:none}
+nav a{color:white;text-decoration:none}
+.menu{display:none;background:none;border:0;color:white;font-size:25px}
+.hero{min-height:90vh;background:linear-gradient(135deg,#071a2f,#0b3960);color:white;display:flex;align-items:center;justify-content:center;text-align:center;padding:80px 20px}
+.hero h1{font-size:clamp(35px,6vw,55px)}
+.hero h1 span{color:#38bdf8}
+.hero h2{font-weight:normal;margin:15px 0}
+.hero p{max-width:650px;margin:auto;color:#d7e7f5}
+.btn{display:inline-block;padding:12px 22px;margin:10px 5px;border-radius:6px;text-decoration:none;font-weight:bold;border:0;cursor:pointer}
+.primary{background:#38bdf8;color:#071a2f}
+.secondary{border:1px solid #38bdf8;color:#38bdf8}
+section{padding:65px 7%;scroll-margin-top:70px}
+.title{text-align:center;color:#071a2f;margin-bottom:30px;font-size:30px}
+.line{width:60px;height:4px;background:#38bdf8;margin:10px auto}
+.about-box{max-width:850px;margin:auto;padding:25px;background:#eaf7ff;border-left:5px solid #38bdf8;border-radius:8px}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;max-width:1100px;margin:auto}
+.card{background:white;padding:22px;border-radius:10px;box-shadow:0 4px 15px #071a2f12}
+.card h3{color:#071a2f;margin-bottom:8px}
+.card p{color:#64748b;margin-bottom:10px}
+.skills{background:#eaf7ff}
+.skill{background:white;padding:18px;text-align:center;border-radius:8px;font-weight:bold}
+.project-link{display:inline-block;background:#071a2f;color:white;padding:9px 13px;border-radius:5px;text-decoration:none}
+.contact{background:white}
+form{max-width:650px;margin:auto;display:flex;flex-direction:column;gap:15px}
+input,textarea{width:100%;padding:14px;border:1px solid #cbd5e1;border-radius:7px;font:inherit}
+textarea{min-height:130px;resize:vertical}
+footer{background:#071a2f;color:white;text-align:center;padding:22px}
+footer span{color:#38bdf8}
+@media(max-width:750px){
+.menu{display:block}
+nav ul{display:none;position:absolute;top:65px;left:0;width:100%;background:#071a2f;flex-direction:column;text-align:center;padding:15px}
+nav ul.active{display:flex}
+nav ul li{padding:8px}
+.cards{grid-template-columns:1fr}
+section{padding:55px 5%}
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+<a href="#home" class="logo">Mubeen<span>Arif</span></a>
+<button class="menu" onclick="toggleMenu()">☰</button>
+<ul id="navMenu">
+<li><a href="#home">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#education">Education</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#certificates">Certificates</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+
+<section class="hero" id="home">
+<div>
+<h1>Hi, I'm <span>Mubeen Arif</span></h1>
+<h2>Web Developer</h2>
+<p>I am an Information Technology graduate interested in web development and creating modern, responsive websites.</p>
+<div style="margin-top:25px">
+<a href="assets/Mubeen-Arif-CV.pdf" target="_blank" class="btn primary">View Resume</a>
+<a href="#contact" class="btn secondary">Contact Me</a>
+</div>
+</div>
+</section>
+
+<section id="about">
+<h2 class="title">About Me</h2>
+<div class="line"></div>
+<div class="about-box">
+<p>I am Mubeen Arif, an Information Technology graduate interested in web development and modern technology.</p>
+<p>I enjoy learning new technologies and building practical websites that solve real-world problems.</p>
+</div>
+</section>
+
+<section id="education">
+<h2 class="title">Education</h2>
+<div class="line"></div>
+<div class="cards">
+<div class="card"><h3>BS Information Technology</h3><p>Bachelor of Science in Information Technology</p></div>
+<div class="card"><h3>Intermediate</h3><p>Computer Science</p></div>
+<div class="card"><h3>Matriculation</h3><p>Computer Science</p></div>
+</div>
+</section>
+
+<section class="skills" id="skills">
+<h2 class="title">Skills</h2>
+<div class="line"></div>
+<div class="cards">
+<div class="skill">Web Development</div>
+<div class="skill">HTML</div>
+<div class="skill">CSS</div>
+<div class="skill">JavaScript</div>
+<div class="skill">Python</div>
+<div class="skill">Microsoft Office</div>
+<div class="skill">Cloud Computing</div>
+<div class="skill">Problem Solving</div>
+<div class="skill">Time Management</div>
+</div>
+</section>
+
+<section id="certificates">
+<h2 class="title">Courses & Certificates</h2>
+<div class="line"></div>
+<div class="cards">
+<div class="card"><h3>Microsoft Azure Fundamentals</h3><p>Cloud computing fundamentals.</p></div>
+<div class="card"><h3>Project Management</h3><p>Project management concepts.</p></div>
+<div class="card"><h3>Applied Data Science with Python</h3><p>Data science fundamentals.</p></div>
+<div class="card"><h3>Web Development</h3><p>Website development concepts.</p></div>
+</div>
+</section>
+
+<section class="skills" id="projects">
+<h2 class="title">My Projects</h2>
+<div class="line"></div>
+<div class="cards">
+
+<div class="card">
+<h3>AZAM-UL-QURAN Online Academy</h3>
+<p>Responsive website with courses, admission form and WhatsApp integration.</p>
+<p>HTML, CSS, JavaScript</p>
+<a class="project-link" href="https://azam-ul-quran.github.io/AZAM-UL-QURAN-Website/" target="_blank">View Website</a>
+</div>
+
+<div class="card">
+<h3>Mubeen Cafe</h3>
+<p>Individual
+<P> A cafe mobile application concept with food categories, search and cart.</p>
+<p>Flutter / Dart</p>
+</div>
+
+<div class="card">
+<h3>Nexus Learn</h3>
+<P>H.A.S.M.D.C
+<p>An academic final year project developed as a teamwork project.</p>
+<p>Flutter/firebase/figma/AI authentication</p>
+</div>
+
+
+</div>
+</section>
+
+<section id="contact">
+<h2 class="title">Contact Me</h2>
+<div class="line"></div>
+<p style="text-align:center;margin-bottom:25px">Have a question? Send me a message!</p>
+
+<form id="contactForm">
+<input type="text" id="name" placeholder="Your Name" required>
+<input type="email" id="email" placeholder="Your Email" required>
+<textarea id="message" placeholder="Your Message" required></textarea>
+<button type="submit" class="btn primary">Submit via WhatsApp</button>
+</form>
+<p style="text-align:center;color:#64748b;margin-top:15px">
+Lahore, Pakistan
+</p>
+</section>
+
+<footer>
+<p>© 2026 Mubeen Arif. All Rights Reserved.</p>
+<p>Email: mubeenarif725@gmail.com</p>
+</footer>
+
+<script>
+function toggleMenu(){
+document.getElementById("navMenu").classList.toggle("active");
+}
+
+document.querySelectorAll("#navMenu a").forEach(function(link){
+link.addEventListener("click",function(){
+document.getElementById("navMenu").classList.remove("active");
+});
+});
+
+document.getElementById("contactForm").addEventListener("submit",function(e){
+e.preventDefault();
+
+const name=document.getElementById("name").value.trim();
+const email=document.getElementById("email").value.trim();
+const message=document.getElementById("message").value.trim();
+
+const phone="923237428211";
+
+const text="Portfolio Contact Message\n\n"+
+"Name: "+name+"\n"+
+"Email: "+email+"\n"+
+"Message: "+message;
+
+const url="https://wa.me/"+phone+"?text="+encodeURIComponent(text);
+
+window.open(url,"_blank");
+});
+</script>
+
+</body>
+</html>
